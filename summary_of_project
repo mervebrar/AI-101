@@ -1,0 +1,79 @@
+# Cat vs Dog Classification using CNN and Transfer Learning (VGG16)
+
+This project focuses on classifying cat and dog images using two approaches:  
+(1) a simple Convolutional Neural Network (CNN) and  
+(2) Transfer Learning with VGG16.
+
+The dataset has been preprocessed, augmented, and split into training, validation, and test sets to ensure a robust evaluation.
+
+---
+
+## 🛠️ Technologies Used
+- Python
+- TensorFlow & Keras
+- OpenCV
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+---
+
+## 📁 Project Structure
+
+- `data_separation.py`:  
+  Splits the original dataset into training, validation, and test folders.
+
+- `preprocess.py`:  
+  Processes images (resizing, Gaussian blur, histogram equalization).
+
+- `train_model.py`:  
+  Trains a custom CNN model.
+
+- `train_model_vgg16.py`:  
+  Trains a VGG16-based model using transfer learning.
+
+- `models/`:  
+  Contains the saved trained model (`cat_dog_classifier_vgg16.h5`).
+
+- `results/`:  
+  Contains training graphs, classification reports, and confusion matrices.
+
+---
+
+## 🚀 How to Run the Project
+
+1. **Split the Dataset**  
+   Run `data_separation.py` to organize the images into `train/`, `validation/`, and `test/` directories.
+
+2. **Preprocess the Images**  
+   Run `preprocess.py` to resize and enhance the images.
+
+3. **Train the Model**  
+   You can either:
+   - Train a basic CNN using `train_model.py`, or
+   - Train a VGG16-based model using `train_model_vgg16.py`.
+
+4. **Evaluate the Model**  
+   After training, evaluation results (accuracy graphs, classification reports, and confusion matrices) will be saved under the `results/` folder.
+
+---
+
+## 📈 Results
+
+### Training and Validation Accuracy
+(Include your `training_accuracy_graph.png` here)
+
+### Test Set Performance
+- Precision: *...*  
+- Recall: *...*  
+- F1-Score: *...*  
+- Test Accuracy: *...%*
+
+### Confusion Matrix
+(Include your `confusion_matrix.png` here)
+
+---
+
+## ⚡ Key Highlights
+
+- Applied **Data Augmentation** (rotation, zoom, shift, brightness)
